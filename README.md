@@ -1,7 +1,5 @@
 # 💫 About Me:
 
-## Clement Zhao
-
 **Software Developer | Systems Builder | AI and Infrastructure Enthusiast**
 
 I build real world software systems with a focus on architecture, scalability, and applied intelligence. My work centers on designing applications that are not only functional but structurally sound, maintainable, and production ready.
