@@ -1,0 +1,39 @@
+name: Update commit activity
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/commit-activity.yml"
+      - "scripts/generate_commit_activity.py"
+permissions:
+  contents: write
+concurrency:
+  group: commit-activity
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate commit chart
+        run: python scripts/generate_commit_activity.py --output dist/commit-activity.svg
+      - name: Publish chart to output branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp dist/commit-activity.svg "$RUNNER_TEMP/commit-activity.svg"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan output
+          cp "$RUNNER_TEMP/commit-activity.svg" ./commit-activity.svg
+          git add commit-activity.svg
+          git commit -m "Update generated commit activity chart"
+          git push --force origin output
