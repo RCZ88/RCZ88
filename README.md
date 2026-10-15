@@ -1,79 +1,100 @@
-# 💫 About Me:
-
-**Software Developer | Systems Builder | AI and Infrastructure Enthusiast**
-
-I build real world software systems with a focus on architecture, scalability, and applied intelligence. My work centers on designing applications that are not only functional but structurally sound, maintainable, and production ready.
-
-**Current Project**  
-Developing a full featured mobile tutoring platform using Android Studio and Firebase. This system includes scheduling logic, structured data models, real time database handling, and modular UI architecture. The goal is to deeply understand how complex applications operate end to end rather than only assembling features.
-
-**Technical Focus Areas**
-
-- Software architecture and system design
-- Machine learning and AI systems
-- Backend logic and database engineering
-- Automation tools and intelligent agents
-- Mobile application development    
-
-**Engineering Interests**  
-Currently expanding expertise in
-
-- Cloud infrastructure and AWS deployment
-- Multi language development for adaptability
-- Database logic, optimization, and query design
-- MCP server systems and distributed architecture
-- AI infrastructure and model deployment pipelines
-
-**Background**  
-My interest in programming began through early experimentation with visual programming environments, which quickly evolved into a deeper pursuit of real programming languages, system logic, and advanced computing concepts.
-
-**Future Builds**
-
-- Data processing and analytics platform
-- Advanced neural network implementations
-- Automation and productivity systems
-**Open To**  
-Internships, junior engineering roles, research collaborations, and technically challenging projects where I can contribute, learn quickly, and operate in high growth environments.<br>
-
-  
-  
-
-## 🌐 Socials:
-
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/rclement_z) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:clementzhao74@gmail.com)
-
-  
-
-# 💻 Tech Stack:
-
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=flat&logo=firebase&logoColor=ffcd34) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat&logo=sqlite&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white) ![Electron.js](https://img.shields.io/badge/Electron-191970?style=flat&logo=Electron&logoColor=white)
-
-# 📊 GitHub Stats:
-
-![](https://github-readme-stats.vercel.app/api?username=RCZ88&theme=gotham&hide_border=false&include_all_commits=false&count_private=false)<br/>
-
-![](https://nirzak-streak-stats.vercel.app/?user=RCZ88&theme=gotham&hide_border=false)<br/>
-
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=RCZ88&theme=gotham&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-  
-
-## 🏆 GitHub Trophies
-
-![](https://github-profile-trophy.vercel.app/?username=RCZ88&theme=onedark&no-frame=true&no-bg=true&margin-w=4)
-
-  
-
-### ✍️ Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
-
-  
+<div align="center">
+  <img src="assets/profile-header.svg" alt="RCZ88: algorithms, systems programming, and neural networks" width="100%" />
+  <p><strong>Algorithms · Systems Programming · Neural Networks</strong></p>
+  <p>Learning how things work underneath the abstractions, then building with that understanding.</p>
+  <p>
+    <a href="https://github.com/RCZ88?tab=repositories">Repositories</a>
+    · <a href="https://github.com/RCZ88">GitHub</a>
+    · <a href="mailto:clementzhao74@gmail.com">Email</a>
+    · <a href="https://instagram.com/rclement_z">Instagram</a>
+  </p>
+</div>
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=RCZ88&icon=0&color=0)](https://visitcount.itsvg.in)
+## Current focus
 
-  
+- **Algorithms and data structures.** Practising problem solving, complexity analysis, and implementing reusable structures rather than only relying on library implementations.
+- **C and memory management.** Exploring allocation, ownership, resizing, and the design of small, reusable systems interfaces through SALOK.
+- **Neural networks.** Revisiting the mathematics behind learning systems, with particular interest in backpropagation, attention, and transformer architectures.
+- **AI infrastructure.** Building with MCP, agent workflows, context management, and tools that can test and improve their own workflows.
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## Selected work
+
+### [SVM vs. Random Forest](https://github.com/RCZ88/SVMxRF-BC)
+
+A from-scratch comparison of Support Vector Machines and Random Forests on the Wisconsin Breast Cancer dataset. The project explores the SVM dual optimisation problem, tree splitting, bootstrapping, cross-validation, and the trade-offs between precision and recall. The SVM quadratic programme uses CVXOPT rather than a scikit-learn estimator.
+
+**Focus:** algorithms · optimisation · evaluation · Python
+
+### SALOK · Smart Memory Allocation `IN PROGRESS`
+
+An experimental C library that grew out of a practical need for a dynamically resizing array while building a Blackjack game. The project is an opportunity to explore allocation and reallocation, explicit ownership, allocation failure handling, typed interfaces, and reusable data structures. Its API and architecture are still being worked out; it is not a finished library.
+
+**Focus:** C · memory management · dynamic arrays · API design
+
+### [NeuroQuant](https://github.com/RCZ88/neuroquant)
+
+An experimental quantitative research platform exploring LSTM models, attention, sentiment signals, Bayesian fusion, and market-regime detection. It connects model design with the challenge of combining noisy signals and evaluating decisions under uncertainty.
+
+**Focus:** neural networks · machine learning · quantitative modelling
+
+### [MCP-AI Bridge](https://github.com/RCZ88/mcp-ai-bridge)
+
+A stateless FastAPI service for connecting AI agents to external tools through the Model Context Protocol. The design explores request-scoped tool sessions, server-side credential handling, and auditing tool calls.
+
+**Focus:** Python · FastAPI · MCP · agent infrastructure
+
+### [RHEO](https://github.com/RCZ88/RHEO)
+
+A desktop application in active development, built with Electron, React, TypeScript, and SQLite. Its scope includes local activity tracking and AI-agent workflows, with an emphasis on connecting application architecture, persistent state, and tooling.
+
+**Focus:** Electron · TypeScript · React · SQLite · AI orchestration
+
+### [Agent ecosystem](https://github.com/RCZ88/ecosystem)
+
+A file-based framework for sharing state, durable notes, actions, and reusable skills across AI agents. It explores how a simple set of explicit files and scripts can coordinate agents without requiring a large runtime dependency stack.
+
+**Focus:** agent workflows · context management · automation
+
+## Technologies
+
+**Languages**
+
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=222222)
+
+**Application and data**
+
+![Electron](https://img.shields.io/badge/Electron-47848F?style=flat&logo=electron&logoColor=white)
+![React](https://img.shields.io/badge/React-149ECA?style=flat&logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat&logo=firebase&logoColor=white)
+
+**AI and development tools**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-34495E?style=flat)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat)
+![OpenCode](https://img.shields.io/badge/OpenCode-222222?style=flat)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=222222)
+
+## Commit activity
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/RCZ88/RCZ88/output/commit-activity.svg" alt="Commit activity for the last 365 days and recently observed public push events" width="100%" />
+</div>
+
+<sub>The chart counts commits attributed to @RCZ88 in public repositories owned by @RCZ88 over the last 365 days. It excludes this profile repository to avoid counting its own generated updates. Public push events are shown separately for the last 30 days and are subject to GitHub's event-history limits. Private repositories and repositories owned by other accounts are not included.</sub>
+
+---
+
+<div align="center">
+  <sub>Built around the work, not the widgets.</sub>
+</div>
