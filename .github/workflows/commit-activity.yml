@@ -1,4 +1,4 @@
-name: Update commit activity
+name: Update engineering activity
 on:
   schedule:
     - cron: "17 3 * * *"
@@ -8,10 +8,11 @@ on:
     paths:
       - ".github/workflows/commit-activity.yml"
       - "scripts/generate_commit_activity.py"
+      - "README.md"
 permissions:
   contents: write
 concurrency:
-  group: commit-activity
+  group: engineering-activity
   cancel-in-progress: false
 jobs:
   generate:
@@ -19,21 +20,24 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check out profile
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Generate commit chart
-        run: python scripts/generate_commit_activity.py --output dist/commit-activity.svg
-      - name: Publish chart to output branch
-        shell: bash
+      - name: Generate activity dashboard
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_commit_activity.py --output assets/commit-activity.svg
+      - name: Commit refreshed dashboard
         run: |
-          set -euo pipefail
-          cp dist/commit-activity.svg "$RUNNER_TEMP/commit-activity.svg"
+          if git diff --quiet -- assets/commit-activity.svg; then
+            echo "Activity chart is unchanged."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan output
-          cp "$RUNNER_TEMP/commit-activity.svg" ./commit-activity.svg
-          git add commit-activity.svg
-          git commit -m "Update generated commit activity chart"
-          git push --force origin output
+          git add assets/commit-activity.svg
+          git commit -m "chore: refresh engineering activity"
+          git push
