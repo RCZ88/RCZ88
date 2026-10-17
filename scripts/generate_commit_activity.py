@@ -142,7 +142,7 @@ def render_svg(daily: Counter[str], total: int, search_truncated: bool, diffs: d
     end_date = now.date()
     start_date = end_date - timedelta(days=364)
     first_day = start_date - timedelta(days=start_date.weekday())
-    last_day = end_date + timedelta(days=6-last_day_weekday(end_date))
+    last_day = end_date + timedelta(days=6-end_date.weekday())
     weeks = (last_day - first_day).days // 7 + 1
     cell, gap, step, x0, y0 = 10, 3, 13, 44, 112
     grid_width = weeks * step - gap
@@ -218,9 +218,6 @@ def render_svg(daily: Counter[str], total: int, search_truncated: bool, diffs: d
         '</svg>',
     ]
     return "\n".join(p) + "\n"
-
-def last_day_weekday(value: date) -> int:
-    return value.weekday()
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
