@@ -66,7 +66,7 @@ def in_scope(item: dict[str, Any]) -> bool:
 def search_user_commits(start: datetime, end: datetime) -> tuple[list[dict[str, Any]], int, bool]:
     # Search is global because the API's repository commits endpoint requires
     # one request per repository. Filter the returned public results to owned repos.
-    q = f"author:{OWNER} committer-date:>={start.date().isoformat()} committer-date:<={end.date().isoformat()}"
+    q = f"author:{OWNER} committer-date:>={start.date().isoformat()} committer-date:<={(end.date() + timedelta(days=1)).isoformat()}"
     results: list[dict[str, Any]] = []
     page, total = 1, 0
     while True:
@@ -106,7 +106,7 @@ def recent_diff_stats(commits: list[dict[str, Any]], now: datetime) -> dict[str,
         url = f"{API}/repos/{repo}/commits/{urllib.parse.quote(sha, safe='')}"
         try:
             details = get_json(url)
-        except urllib.error.HTTPError as error:
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
             # Continue through individual missing/temporarily inaccessible diffs.
             print(f"Warning: could not inspect {repo}@{sha[:7]} (HTTP {error.code})")
             continue
