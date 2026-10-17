@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+<title id="title">Engineering activity dashboard pending</title>
+<desc id="desc">The scheduled GitHub Actions workflow will replace this placeholder with public commit history and code change statistics.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#142436"/></linearGradient></defs>
+<rect width="1200" height="410" rx="18" fill="url(#bg)"/><path d="M30 68H1170" stroke="#2b4055"/>
+<g font-family="ui-monospace,Menlo,monospace"><text x="34" y="30" font-size="11" letter-spacing="2" fill="#7dd3fc">ENGINEERING ACTIVITY / PUBLIC REPOSITORIES</text><text x="34" y="54" font-size="22" fill="#f8fafc">Commit history &amp; code changes</text>
+<text x="600" y="167" text-anchor="middle" font-size="20" fill="#e2e8f0">Waiting for the first GitHub Actions run</text><text x="600" y="197" text-anchor="middle" font-size="13" fill="#94a3b8">This panel will populate with real repository data after the workflow runs.</text>
+<text x="600" y="231" text-anchor="middle" font-size="11" fill="#5eead4">365-DAY COMMITS · ACTIVE DAYS · LINES ADDED/DELETED · FILES CHANGED</text>
+<rect x="34" y="270" width="1132" height="84" rx="10" fill="#111f30" stroke="#2b4055"/>
+<text x="58" y="303" font-size="12" fill="#7dd3fc">SOURCE</text><text x="58" y="328" font-size="13" fill="#dbeafe">GitHub REST API + scheduled Actions workflow</text><text x="1140" y="328" text-anchor="end" font-size="11" fill="#94a3b8">No sample numbers displayed</text>
+</g></svg>
