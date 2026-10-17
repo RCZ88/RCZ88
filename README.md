@@ -1,100 +1,156 @@
 <div align="center">
-  <img src="assets/profile-header.svg" alt="RCZ88: algorithms, systems programming, and neural networks" width="100%" />
-  <p><strong>Algorithms · Systems Programming · Neural Networks</strong></p>
-  <p>Learning how things work underneath the abstractions, then building with that understanding.</p>
+
+  <img src="assets/profile-header.svg" alt="RCZ88 | Algorithms, systems programming, neural networks" width="100%" />
+
+  <p><strong>Algorithms &nbsp;·&nbsp; Systems Programming &nbsp;·&nbsp; Neural Networks</strong></p>
+  <p>I like understanding what happens beneath the abstractions, then building things with that understanding.</p>
+
   <p>
-    <a href="https://github.com/RCZ88?tab=repositories">Repositories</a>
-    · <a href="https://github.com/RCZ88">GitHub</a>
-    · <a href="mailto:clementzhao74@gmail.com">Email</a>
-    · <a href="https://instagram.com/rclement_z">Instagram</a>
+    <a href="#featured-work">FEATURED WORK</a> &nbsp;·&nbsp;
+    <a href="#engineering-activity">ENGINEERING ACTIVITY</a> &nbsp;·&nbsp;
+    <a href="https://github.com/RCZ88?tab=repositories">ALL REPOSITORIES</a>
+  </p>
+
+  <p>
+    <a href="mailto:clementzhao74@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-94a3b8?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+    <a href="https://instagram.com/rclement_z"><img src="https://img.shields.io/badge/Instagram-Profile-c084fc?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
   </p>
 </div>
 
 ---
 
-## Current focus
+## What I'm exploring
 
-- **Algorithms and data structures.** Practising problem solving, complexity analysis, and implementing reusable structures rather than only relying on library implementations.
-- **C and memory management.** Exploring allocation, ownership, resizing, and the design of small, reusable systems interfaces through SALOK.
-- **Neural networks.** Revisiting the mathematics behind learning systems, with particular interest in backpropagation, attention, and transformer architectures.
-- **AI infrastructure.** Building with MCP, agent workflows, context management, and tools that can test and improve their own workflows.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>01 / Algorithms & data structures</h3>
+      Understanding time and space complexity, implementing data structures, and learning why an algorithm works instead of only memorising a solution.
+    </td>
+    <td width="50%" valign="top">
+      <h3>02 / C & memory</h3>
+      Pointers, allocation, ownership, resizing, failure handling, and designing useful abstractions without hiding the underlying mechanics.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>03 / Neural networks</h3>
+      Returning to the maths behind learning systems: forward propagation, backpropagation, attention, and small models I can reason about from first principles.
+    </td>
+    <td width="50%" valign="top">
+      <h3>04 / AI infrastructure</h3>
+      MCP servers, agent skills, context management, tool workflows, and ways to test AI-driven systems instead of trusting them blindly.
+    </td>
+  </tr>
+</table>
 
-## Selected work
+<a id="featured-work"></a>
 
-### [SVM vs. Random Forest](https://github.com/RCZ88/SVMxRF-BC)
+## Featured work
 
-A from-scratch comparison of Support Vector Machines and Random Forests on the Wisconsin Breast Cancer dataset. The project explores the SVM dual optimisation problem, tree splitting, bootstrapping, cross-validation, and the trade-offs between precision and recall. The SVM quadratic programme uses CVXOPT rather than a scikit-learn estimator.
+These projects show the problems I'm interested in, from implementing algorithms to building the infrastructure around AI-powered applications.
 
-**Focus:** algorithms · optimisation · evaluation · Python
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/RCZ88/SVMxRF-BC"><img src="https://img.shields.io/badge/PROJECT_01-ALGORITHMS-38bdf8?style=flat-square" alt="Algorithms project"/></a></p>
+      <h3><a href="https://github.com/RCZ88/SVMxRF-BC">SVM vs. Random Forest</a></h3>
+      <p>A from-scratch comparison on the Wisconsin Breast Cancer dataset. The goal was to understand the algorithms, not just call a prebuilt estimator.</p>
+      <p><code>Python</code> <code>NumPy</code> <code>Optimisation</code></p>
+      <details>
+        <summary>Technical details</summary>
+        <ul>
+          <li>Custom SVM using the dual formulation and a quadratic-programming solver.</li>
+          <li>Random Forest with recursive tree splitting, Gini impurity, bootstrapping, and feature subsampling.</li>
+          <li>Stratified cross-validation and evaluation with precision, recall, and F1.</li>
+        </ul>
+      </details>
+    </td>
+    <td width="50%" valign="top">
+      <p><img src="https://img.shields.io/badge/PROJECT_02-IN_DEVELOPMENT-fbbf24?style=flat-square" alt="In development"/></p>
+      <h3>SALOK / Smart Memory Allocation</h3>
+      <p>An experimental C library that grew out of a dynamic-array problem in a Blackjack project. I'm using it to explore memory management and reusable data structures, while the API and architecture are still evolving.</p>
+      <p><code>C</code> <code>Allocation</code> <code>Dynamic arrays</code></p>
+      <details>
+        <summary>What I'm working through</summary>
+        <ul>
+          <li>Clear ownership and allocation lifetime rules.</li>
+          <li>Safe resizing and allocation-failure behaviour.</li>
+          <li>Typed interfaces versus a generic internal implementation.</li>
+          <li>Keeping allocation tracking separate from containers unless combining them has a clear benefit.</li>
+        </ul>
+        <p><em>SALOK is unfinished and not presented as a released library. Its current development work is not yet published as a finished implementation.</em></p>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/RCZ88/neuroquant"><img src="https://img.shields.io/badge/PROJECT_03-MACHINE_LEARNING-a78bfa?style=flat-square" alt="Machine learning project"/></a></p>
+      <h3><a href="https://github.com/RCZ88/neuroquant">NeuroQuant</a></h3>
+      <p>An experimental quantitative modelling project exploring how model outputs and market signals can be combined under uncertainty.</p>
+      <p><code>Python</code> <code>LSTM</code> <code>Attention</code></p>
+      <details>
+        <summary>Technical direction</summary>
+        <p>The repository describes LSTM-based prediction, attention, sentiment analysis, Bayesian signal fusion, and market-regime detection. These are project design claims, not a guarantee that every component is production-ready.</p>
+      </details>
+    </td>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/RCZ88/RHEO"><img src="https://img.shields.io/badge/PROJECT_04-DESKTOP_SYSTEMS-5eead4?style=flat-square" alt="Desktop systems project"/></a></p>
+      <h3><a href="https://github.com/RCZ88/RHEO">RHEO</a></h3>
+      <p>A large desktop application exploring local activity tracking, persistent state, terminal workflows, and AI-agent orchestration.</p>
+      <p><code>Electron</code> <code>React</code> <code>TypeScript</code> <code>SQLite</code></p>
+      <details>
+        <summary>Engineering focus</summary>
+        <p>Connecting desktop UI, local data, terminal sessions, and agent workflows into an application with multiple interacting subsystems.</p>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/RCZ88/mcp-ai-bridge"><img src="https://img.shields.io/badge/PROJECT_05-AI_INFRASTRUCTURE-f59e0b?style=flat-square" alt="AI infrastructure project"/></a></p>
+      <h3><a href="https://github.com/RCZ88/mcp-ai-bridge">MCP-AI Bridge</a></h3>
+      <p>A service for connecting AI agents to external tools through the Model Context Protocol, with request-scoped sessions and server-side credential handling.</p>
+      <p><code>Python</code> <code>FastAPI</code> <code>MCP</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <p><a href="https://github.com/RCZ88/ecosystem"><img src="https://img.shields.io/badge/PROJECT_06-AGENT_WORKFLOWS-f472b6?style=flat-square" alt="Agent workflows project"/></a></p>
+      <h3><a href="https://github.com/RCZ88/ecosystem">Agent ecosystem</a></h3>
+      <p>A file-based approach to coordinating agent state, reusable skills, context, and structured actions without introducing a large runtime.</p>
+      <p><code>JavaScript</code> <code>Automation</code> <code>Context design</code></p>
+    </td>
+  </tr>
+</table>
 
-### SALOK · Smart Memory Allocation `IN PROGRESS`
+## Tools I use
 
-An experimental C library that grew out of a practical need for a dynamically resizing array while building a Blackjack game. The project is an opportunity to explore allocation and reallocation, explicit ownership, allocation failure handling, typed interfaces, and reusable data structures. Its API and architecture are still being worked out; it is not a finished library.
+<p>
+  <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=222222" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron"/>
+  <img src="https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white" alt="React"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=222222" alt="Linux"/>
+</p>
 
-**Focus:** C · memory management · dynamic arrays · API design
+<a id="engineering-activity"></a>
 
-### [NeuroQuant](https://github.com/RCZ88/neuroquant)
-
-An experimental quantitative research platform exploring LSTM models, attention, sentiment signals, Bayesian fusion, and market-regime detection. It connects model design with the challenge of combining noisy signals and evaluating decisions under uncertainty.
-
-**Focus:** neural networks · machine learning · quantitative modelling
-
-### [MCP-AI Bridge](https://github.com/RCZ88/mcp-ai-bridge)
-
-A stateless FastAPI service for connecting AI agents to external tools through the Model Context Protocol. The design explores request-scoped tool sessions, server-side credential handling, and auditing tool calls.
-
-**Focus:** Python · FastAPI · MCP · agent infrastructure
-
-### [RHEO](https://github.com/RCZ88/RHEO)
-
-A desktop application in active development, built with Electron, React, TypeScript, and SQLite. Its scope includes local activity tracking and AI-agent workflows, with an emphasis on connecting application architecture, persistent state, and tooling.
-
-**Focus:** Electron · TypeScript · React · SQLite · AI orchestration
-
-### [Agent ecosystem](https://github.com/RCZ88/ecosystem)
-
-A file-based framework for sharing state, durable notes, actions, and reusable skills across AI agents. It explores how a simple set of explicit files and scripts can coordinate agents without requiring a large runtime dependency stack.
-
-**Focus:** agent workflows · context management · automation
-
-## Technologies
-
-**Languages**
-
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=222222)
-
-**Application and data**
-
-![Electron](https://img.shields.io/badge/Electron-47848F?style=flat&logo=electron&logoColor=white)
-![React](https://img.shields.io/badge/React-149ECA?style=flat&logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat&logo=firebase&logoColor=white)
-
-**AI and development tools**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP-34495E?style=flat)
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat)
-![OpenCode](https://img.shields.io/badge/OpenCode-222222?style=flat)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=222222)
-
-## Commit activity
+## Engineering activity
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/RCZ88/RCZ88/output/commit-activity.svg" alt="Commit activity for the last 365 days and recently observed public push events" width="100%" />
+  <img src="assets/commit-activity.svg" alt="Commit history and code-change statistics for public repositories" width="100%"/>
 </div>
 
-<sub>The chart counts commits attributed to @RCZ88 in public repositories owned by @RCZ88 over the last 365 days. It excludes this profile repository to avoid counting its own generated updates. Public push events are shown separately for the last 30 days and are subject to GitHub's event-history limits. Private repositories and repositories owned by other accounts are not included.</sub>
+<sub>Activity covers commits attributed to @RCZ88 in public repositories owned by @RCZ88, excluding this profile repository. The chart separates the 365-day commit history from code-change statistics for the latest commits in the last 30 days. Added/deleted lines and touched files are diff totals, so they measure code churn, not net code growth or code quality. Push events are based on GitHub's limited public event feed and may be a lower bound.</sub>
 
 ---
 
 <div align="center">
-  <sub>Built around the work, not the widgets.</sub>
+  <sub>Still learning the fundamentals. Still building things that use them.</sub>
 </div>
