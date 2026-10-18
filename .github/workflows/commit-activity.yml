@@ -1,0 +1,51 @@
+name: Update engineering activity
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/commit-activity.yml"
+      - "scripts/generate_commit_activity.py"
+      - "README.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: engineering-activity
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate generator syntax
+        run: python -m py_compile scripts/generate_commit_activity.py
+
+      - name: Generate activity dashboard
+        run: python scripts/generate_commit_activity.py --output assets/commit-activity.svg
+
+      - name: Commit refreshed dashboard
+        run: |
+          if git diff --quiet -- assets/commit-activity.svg; then
+            echo "Activity chart is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/commit-activity.svg
+          git commit -m "chore: refresh engineering activity"
+          git push
