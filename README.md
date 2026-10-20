@@ -13,7 +13,7 @@
 
   <p>
     <a href="mailto:clementzhao74@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-94a3b8?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-    <a href="https://instagram.com/rclement_z"><img src="https://img.shields.io/badge/Instagram-Profile-c084fc?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
+    <a href="https://instagram.com/devwithcz"><img src="https://img.shields.io/badge/Instagram-Profile-c084fc?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
   </p>
 </div>
 
