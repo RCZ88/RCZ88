@@ -14,6 +14,7 @@
   <p>
     <a href="mailto:clementzhao74@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-94a3b8?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
     <a href="https://instagram.com/devwithcz"><img src="https://img.shields.io/badge/Instagram-Profile-c084fc?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/></a>
+    <a href="https://www.threads.net/@rclement_z"><img src="https://img.shields.io/badge/Threads-%40rclement_z-000000?style=flat-square&logo=threads&logoColor=white" alt="Threads"/></a>
   </p>
 </div>
 
@@ -69,7 +70,7 @@ These projects show the problems I'm interested in, from implementing algorithms
     <td width="50%" valign="top">
       <p><img src="https://img.shields.io/badge/PROJECT_02-IN_DEVELOPMENT-fbbf24?style=flat-square" alt="In development"/></p>
       <h3>SALOK / Smart Memory Allocation</h3>
-      <p>An experimental C library that grew out of a dynamic-array problem in a Blackjack project. I'm using it to explore memory management and reusable data structures, while the API and architecture are still evolving.</p>
+      <p>An experimental C library that grew out of a dynamic-array problem in a Blackjack project. I'm using it to explore memory management and reusable data structures, while the API and architecture are still being shaped by the problems I encounter.</p>
       <p><code>C</code> <code>Allocation</code> <code>Dynamic arrays</code></p>
       <details>
         <summary>What I'm working through</summary>
@@ -91,7 +92,7 @@ These projects show the problems I'm interested in, from implementing algorithms
       <p><code>Python</code> <code>LSTM</code> <code>Attention</code></p>
       <details>
         <summary>Technical direction</summary>
-        <p>The repository describes LSTM-based prediction, attention, sentiment analysis, Bayesian signal fusion, and market-regime detection. These are project design claims, not a guarantee that every component is production-ready.</p>
+        <p>The repository describes LSTM-based prediction, attention, sentiment analysis, Bayesian signal fusion, and market-regime detection. These are project design claims, not a guarantee that every part is fully realised in the current version.</p>
       </details>
     </td>
     <td width="50%" valign="top">
@@ -121,12 +122,13 @@ These projects show the problems I'm interested in, from implementing algorithms
   </tr>
 </table>
 
-## Tools I use
+## Tools, apps & environments I use
 
 <p>
   <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C"/>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=222222" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron"/>
@@ -134,6 +136,13 @@ These projects show the problems I'm interested in, from implementing algorithms
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
   <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase"/>
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white" alt="Cloudinary"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/Claude_Code-FF5E5B?style=flat-square" alt="Claude Code"/>
+  <img src="https://img.shields.io/badge/OpenCode-2E8B57?style=flat-square" alt="OpenCode"/>
+  <img src="https://img.shields.io/badge/Qwen_Code-5B8DEF?style=flat-square" alt="Qwen Code"/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=222222" alt="Linux"/>
@@ -147,7 +156,7 @@ These projects show the problems I'm interested in, from implementing algorithms
   <img src="assets/commit-activity.svg" alt="Commit history and code-change statistics for public repositories" width="100%"/>
 </div>
 
-<sub>Activity covers commits attributed to @RCZ88 in public repositories owned by @RCZ88, excluding this profile repository. The chart separates the 365-day commit history from code-change statistics for the latest commits in the last 30 days. Added/deleted lines and touched files are diff totals, so they measure code churn, not net code growth or code quality. Push events are based on GitHub's limited public event feed and may be a lower bound.</sub>
+<sub>Activity covers commits attributed to @RCZ88 in public repositories owned by @RCZ88, excluding this profile repository. The chart separates the 365-day commit history from code-change statistics, and the underlying project activity is not a complete representation of every experiment or private contribution.</sub>
 
 ---
 
